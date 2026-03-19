@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white text-dark antialiased;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  }
+
+  * {
+    @apply box-border;
+  }
+}
+
+@layer components {
+  .btn-brown {
+    @apply inline-flex items-center justify-center px-6 py-3 bg-brown-700 text-white font-semibold rounded-lg
+           transition-all duration-300 hover:bg-brown-600 hover:shadow-lg hover:-translate-y-0.5
+           focus:outline-none focus:ring-2 focus:ring-brown-500 focus:ring-offset-2
+           active:translate-y-0;
+  }
+
+  .btn-brown-outline {
+    @apply inline-flex items-center justify-center px-6 py-3 border-2 border-brown-700 text-brown-700 font-semibold rounded-lg
+           transition-all duration-300 hover:bg-brown-700 hover:text-white hover:shadow-lg hover:-translate-y-0.5
+           focus:outline-none focus:ring-2 focus:ring-brown-500 focus:ring-offset-2;
+  }
+
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold text-dark;
+  }
+
+  .card-shadow {
+    @apply shadow-card hover:shadow-card-hover transition-shadow duration-300;
+  }
+}
+
+@layer utilities {
+  .text-gradient-brown {
+    background: linear-gradient(135deg, #5C3D2E, #A0522D, #D2B48C);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
