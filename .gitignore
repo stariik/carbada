@@ -43,3 +43,9 @@ carbada.db-wal
 # uploads (keep folder, ignore contents)
 /public/uploads/*
 !/public/uploads/.gitkeep
+
+# build & deploy artifacts
+*.zip
+stderr.log
+stdout.log
+/tmp/
