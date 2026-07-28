@@ -1,6 +1,5 @@
 <div align="center">
 
-
 # Carbada · ქარბადა
 
 **Georgia's premium automotive company — sales, rentals and taxi service, under one roof.**
